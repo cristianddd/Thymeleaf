@@ -12,10 +12,10 @@
         <thead>
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Actions</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Ações</th>
         </tr>
         </thead>
         <tbody>
@@ -25,8 +25,8 @@
             <td th:text="${product.description}"></td>
             <td th:text="${product.price}"></td>
             <td>
-                <a th:href="@{/showFormForUpdate/{id}(id=${product.id})}" class="btn">Edit</a>
-                <a th:href="@{/deleteProduct/{id}(id=${product.id})}" class="btn btn-danger">Delete</a>
+                <a th:href="@{/showFormForUpdate/{id}(id=${product.id})}" class="btn">Editar</a>
+                <a th:href="@{/deleteProduct/{id}(id=${product.id})}" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
         </tbody>

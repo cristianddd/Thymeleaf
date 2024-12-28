@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Update Product</h1>
+    <h1>Atualizar Produto</h1>
     <form th:action="@{/updateProduct}" th:object="${product}" method="post">
         <input type="hidden" th:field="*{id}" />
         <div>
@@ -14,20 +14,20 @@
             <input type="text" th:value="${product.id}" readonly />
         </div>
         <div>
-            <label>Name</label>
+            <label>Nome</label>
             <input type="text" th:field="*{name}" />
         </div>
         <div>
-            <label>Description</label>
+            <label>Descrição</label>
             <input type="text" th:field="*{description}" />
         </div>
         <div>
-            <label>Price</label>
+            <label>Preço</label>
             <input type="number" step="0.01" th:field="*{price}" />
         </div>
         <div>
-            <button type="submit" class="btn">Save</button>
-            <a href="/" class="btn">Cancel</a>
+            <button type="submit" class="btn">Salvar</button>
+            <a href="/" class="btn">Cancelar</a>
         </div>
     </form>
 </div>
